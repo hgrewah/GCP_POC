@@ -28,3 +28,23 @@ gcloud projects add-iam-policy-binding maximal-muse-450022-d7     --member=user:
 gcloud services enable bigqueryconnection.googleapis.com --project=maximal-muse-450022-d7
 gcloud dataflow jobs run csv-to-parquet-job     --gcs-location gs://your-project-id-dataflow-scripts/csv_to_parquet.py     --region us-central1     --staging-location gs://your-project-id-source-bucket/staging/
 git init
+git add .
+git commit -m "Added GCP POC code"
+git config --global user.name "Harkirat Grewal" 
+git config --global user.email "harkirat.grewal20@gmail.com"
+git config --global --list
+git commit -m "Added GCP POC code"
+git remote add origin https://github.com/hgrewah/GCP_POC.git
+git branch -M main
+git push -u origin main
+git remote remove origin
+git remote add origin https://gitlab.com/hgrewah/GCP_POC.git
+git push -u origin main
+git remote remove origin
+git remote -v
+harkirat_grewal20@cloudshell:~ (maximal-muse-450022-d7)$ git remote remove origin
+harkirat_grewal20@cloudshell:~ (maximal-muse-450022-d7)$ git remote -v
+harkirat_grewal20@cloudshell:~ (maximal-muse-450022-d7)$ 
+git remote add origin git@github.com:hgrewah/GCP_POC.git
+git remote -v
+git status
